@@ -1,0 +1,15 @@
+html{
+	background-color:#80E2FF;
+	font-family:Helvetica;
+}
+#title{
+	text-align:center;
+	color:blue;
+}
+#intro{
+	text-align:center;
+}
+a{
+	display:block;
+	text-align:center;
+}
