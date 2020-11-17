@@ -1,15 +1,106 @@
 html{
-	background-color:#80E2FF;
+	background-image:url("sky.jpg");
+	background-size:cover;
 	font-family:Helvetica;
 }
-#title{
+
+table{
+	border:5px solid black;
 	text-align:center;
-	color:blue;
+	margin-left: auto;
+  	margin-right: auto;
 }
-#intro{
-	text-align:center;
-}
+
 a{
 	display:block;
 	text-align:center;
+	font-weight:bold;
 }
+
+td,th{
+	border:5px dashed black;
+	font-size:18px;
+	text-align:center;
+}
+
+ol>li{
+	font-size:20px;
+	font-weight:bold;
+}
+
+p:hover{
+	font-size:23px;
+	animation:bigger-text 2s forwards;
+}
+
+p::first-letter{
+	font-size:30px;
+	color:red;
+}
+
+.title{
+	font-weight:bold;
+	text-align:center;
+	color:blue;
+}
+
+.intro{
+	text-align:center;
+}
+
+.caption{
+	font-weight:bold;
+}
+
+.animate table:hover, .animate td:hover, .animate th:hover{
+	font-size:30px;
+	animation:bigger-table 1s forwards;
+}
+
+.chess,.puzzle,.link,.abacus,.piano,.citations{
+	font-style:italic;
+	font-size:20px;
+	text-align:center;
+}
+
+.current-page{
+	text-decoration:underline;
+	color:blue;
+}
+
+.list{
+	list-style-position:inside; 
+	font-size:22px;
+	text-align:center;
+	color:purple;
+	line-height:30px;
+}
+#chess-board{
+	float:right;
+}
+
+#checklist,#abacus-picture{
+	float:right;
+}
+#sports,#piano-picture{
+	float:left;
+}
+#introduction{
+	display:inline-block;
+}
+@keyframes bigger-text{
+	from{font-size:20px;}
+	to{font-size:23px;}
+}
+
+@keyframes bigger-table{
+	from{
+		font-size:18px; 
+		border:5px solid black;
+	}
+	to{
+		font-size:30px;
+		border:20px solid red;
+	}
+}
+
