@@ -1,3 +1,5 @@
+/*Start with tags*/
+/*Upload sky background*/
 html{
 	background-image:url("sky.jpg");
 	background-size:cover;
@@ -27,17 +29,17 @@ ol>li{
 	font-size:20px;
 	font-weight:bold;
 }
-
+/*If paragraphs are hovered over*/
 p:hover{
 	font-size:23px;
 	animation:bigger-text 2s forwards;
 }
-
+/*Make first letter of paragraphs different*/
 p::first-letter{
 	font-size:30px;
 	color:red;
 }
-
+/*Go to defining classes*/
 .title{
 	font-weight:bold;
 	text-align:center;
@@ -51,7 +53,7 @@ p::first-letter{
 .caption{
 	font-weight:bold;
 }
-
+/*Define table animation*/
 .animate table:hover, .animate td:hover, .animate th:hover{
 	font-size:30px;
 	animation:bigger-table 1s forwards;
@@ -67,7 +69,7 @@ p::first-letter{
 	text-decoration:underline;
 	color:blue;
 }
-
+/*Make list compact*/
 .list{
 	list-style-position:inside; 
 	font-size:22px;
@@ -75,11 +77,16 @@ p::first-letter{
 	color:purple;
 	line-height:30px;
 }
+
+.button{
+	float:center;
+}
+/*Define IDs and pictures*/
 #chess-board{
 	float:right;
 }
 
-#checklist,#abacus-picture{
+#checklist,#abacus-picture,#fun-facts{
 	float:right;
 }
 #sports,#piano-picture{
@@ -88,6 +95,7 @@ p::first-letter{
 #introduction{
 	display:inline-block;
 }
+/*Define animation*/
 @keyframes bigger-text{
 	from{font-size:20px;}
 	to{font-size:23px;}
