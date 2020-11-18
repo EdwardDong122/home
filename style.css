@@ -78,9 +78,6 @@ p::first-letter{
 	line-height:30px;
 }
 
-.button{
-	float:center;
-}
 /*Define IDs and pictures*/
 #chess-board{
 	float:right;
